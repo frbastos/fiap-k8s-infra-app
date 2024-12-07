@@ -27,7 +27,7 @@ jobs:
       - name: Apply ConfigMap and Secrets
         run: |
           kubectl apply -f configmap.yaml
-          kubectl apply -f secret.yaml
+          kubectl apply -f secrets.yaml
 
       - name: Build and push Docker image
         run: |
