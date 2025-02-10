@@ -38,12 +38,12 @@ spec:
           - name: SPRING_PROFILES_ACTIVE
             valueFrom:
               configMapKeyRef:
-                name: app-config
+                name: pedido-config
                 key: SPRING_PROFILES_ACTIVE
           - name: SPRING_DATASOURCE_URL
             valueFrom:
               configMapKeyRef:
-                name: app-config
+                name: pedido-config
                 key: SPRING_DATASOURCE_URL
           - name: SPRING_DATASOURCE_USERNAME
             valueFrom:
@@ -60,10 +60,10 @@ spec:
           - name: SPRING_JPA_HIBERNATE_DDL-AUTO
             valueFrom:
               configMapKeyRef:
-                name: app-config
+                name: pedido-config
                 key: SPRING_JPA_HIBERNATE_DDL-AUTO
           - name: SPRING_JPA_DATABASE-PLATFORM
             valueFrom:
               configMapKeyRef:
-                name: app-config
+                name: pedido-config
                 key: SPRING_JPA_DATABASE-PLATFORM
