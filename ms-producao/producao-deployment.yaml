@@ -15,7 +15,7 @@ spec:
         app:  producao-deployment
     spec:
       containers:
-      - name: app-container
+      - name: producao-container
         image: ar989827/ms-producao:latest
         ports:
           - containerPort: 8082
