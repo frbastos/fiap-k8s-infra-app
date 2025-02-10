@@ -19,6 +19,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
+      - name: List files for debugging
+        run: ls -R
+
       - name: Update kube config
         run: aws eks update-kubeconfig --name dev-fiap-eks-cluster --region us-east-1
 
@@ -33,7 +36,7 @@ jobs:
 
       - name: Deploy to EKS
         run: |
-          kubectl apply -f pedido-deployment.yaml
-          kubectl apply -f pedido-svc.yaml
-          kubectl apply -f producao-deployment.yaml
-          kubectl apply -f producao-svc.yaml
+          kubectl apply -f ms-pedido/pedido-deployment.yaml
+          kubectl apply -f ms-pedido/pedido-svc.yaml
+          kubectl apply -f ms-producao/producao-deployment.yaml
+          kubectl apply -f ms-producao/producao-svc.yaml
