@@ -4,6 +4,6 @@ metadata:
   name: app-config
 data:
   SPRING_PROFILES_ACTIVE: prod
-  SPRING_DATASOURCE_URL: jdbc:postgresql://lanchonetedb.cx0q4uy6g204.us-east-1.rds.amazonaws.com:5432/lanchonetedb
+  SPRING_DATASOURCE_URL: jdbc:postgresql://lanchonetedb.cx40omioc0sn.us-east-1.rds.amazonaws.com:5432
   SPRING_JPA_HIBERNATE_DDL-AUTO: none
   SPRING_JPA_DATABASE-PLATFORM: org.hibernate.dialect.PostgreSQLDialect

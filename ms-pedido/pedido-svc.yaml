@@ -4,7 +4,7 @@ metadata:
   name: app-srv
 spec:
   selector:
-    app: app-deployment
+    app: pedido-deployment
   type: LoadBalancer
   ports:
     - port: 80

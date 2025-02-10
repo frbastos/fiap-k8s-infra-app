@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  app-deployment
+  name:  pedido-deployment
   labels:
-    app:  app-deployment
+    app:  pedido-deployment
 spec:
   selector:
     matchLabels:
-      app: app-deployment
-  replicas: 2
+      app: pedido-deployment
+  replicas: 1
   template:
     metadata:
       labels:
-        app:  app-deployment
+        app:  pedido-deployment
     spec:
       containers:
-      - name: app-container
-        image: ar989827/lanchonete:v1
+      - name: pedido-container
+        image: ar989827/ms-pedido:latest
         ports:
           - containerPort: 8080
         #Liveness Probe
