@@ -31,6 +31,7 @@ jobs:
       - name: Apply ConfigMap and Secrets
         run: |
           kubectl apply -f ms-pedido/pedido-configmap.yaml
+          kubectl apply -f ms-producao/pagamento-configmap.yaml
           kubectl apply -f ms-producao/producao-configmap.yaml
           kubectl apply -f secrets.yaml
 
@@ -38,5 +39,7 @@ jobs:
         run: |
           kubectl apply -f ms-pedido/pedido-deployment.yaml
           kubectl apply -f ms-pedido/pedido-srv.yaml
+           kubectl apply -f ms-pedido/pagamento-deployment.yaml
+          kubectl apply -f ms-pedido/pagamento-srv.yaml
           kubectl apply -f ms-producao/producao-deployment.yaml
           kubectl apply -f ms-producao/producao-srv.yaml
