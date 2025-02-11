@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pagamento-container
-        image: ar989827/pagamento:v1
+        image: ar989827/pagamento:latest
         ports:
           - containerPort: 8081
         #Liveness Probe
