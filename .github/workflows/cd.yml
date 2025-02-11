@@ -39,7 +39,7 @@ jobs:
         run: |
           kubectl apply -f ms-pedido/pedido-deployment.yaml
           kubectl apply -f ms-pedido/pedido-srv.yaml
-           kubectl apply -f ms-pedido/pagamento-deployment.yaml
-          kubectl apply -f ms-pedido/pagamento-srv.yaml
+          kubectl apply -f ms-pagamento/pagamento-deployment.yaml
+          kubectl apply -f ms-pagamento/pagamento-srv.yaml
           kubectl apply -f ms-producao/producao-deployment.yaml
           kubectl apply -f ms-producao/producao-srv.yaml
