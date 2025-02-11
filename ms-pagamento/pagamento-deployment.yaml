@@ -18,12 +18,12 @@ spec:
       - name: pagamento-container
         image: ar989827/ms-pagamento:latest
         ports:
-          - containerPort: 8081
+          - containerPort: 8082
         #Liveness Probe
         livenessProbe:
           httpGet:
             path: /actuator/health
-            port: 8081
+            port: 8082
           initialDelaySeconds: 110
           periodSeconds: 20
           failureThreshold: 3
@@ -44,4 +44,4 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: app-secrets
-                key: SPRING_DATASOURCE_URL
+                key: SPRING_DATASOURCE_URL_PAGAMENTO
