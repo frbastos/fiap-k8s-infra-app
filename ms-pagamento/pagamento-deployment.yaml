@@ -15,7 +15,7 @@ spec:
         app:  pagamento-deployment
     spec:
       containers:
-      - name: app-container
+      - name: pagamento-container
         image: ar989827/pagamento:v1
         ports:
           - containerPort: 8081
