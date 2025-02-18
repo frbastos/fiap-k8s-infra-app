@@ -18,12 +18,12 @@ spec:
       - name: pagamento-container
         image: ar989827/ms-pagamento:latest
         ports:
-          - containerPort: 8082
+          - containerPort: 8081
         #Liveness Probe
         livenessProbe:
           httpGet:
             path: /actuator/health
-            port: 8082
+            port: 8081
           initialDelaySeconds: 110
           periodSeconds: 20
           failureThreshold: 3
