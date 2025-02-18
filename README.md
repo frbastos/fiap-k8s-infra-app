@@ -11,14 +11,7 @@ Este workflow utiliza **GitHub Actions** para automatizar o processo de atualiza
 - Configuração de **secrets** no repositório:
   - `AWS_ACCESS_KEY_ID`
   - `AWS_SECRET_ACCESS_KEY`
-  - `AWS_SESSION_TOKEN`
   - `DOCKERHUB_TOKEN`
-
-- Arquivos YAML de configuração no repositório:
-  - `configmap.yaml`
-  - `secrets.yaml`
-  - `app-deployment.yaml`
-  - `app-svc.yaml`
 
 ---
 
