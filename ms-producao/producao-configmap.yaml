@@ -7,3 +7,4 @@ data:
   SPRING_DATASOURCE_URL: jdbc:postgresql://lanchonetedb.cx40omioc0sn.us-east-1.rds.amazonaws.com:5432/producaodb
   SPRING_JPA_HIBERNATE_DDL-AUTO: none
   SPRING_JPA_DATABASE-PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+  
